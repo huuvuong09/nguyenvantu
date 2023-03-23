@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS230213-nguyen van tu</title>
+</head>
+
+<body>
+    <script>
+        function inHoa(str) {
+            let capital = str.split(" ");
+            for (let i = 0; i < capital.length; i++) {
+                capital[i] = capital[i].slice(0,1).toUpperCase() + capital[i].slice(1);
+            }
+            return capital.toString(" ");
+        }
+        let valueInput = prompt("Nhập từ bạn muốn in hoa chữ cái đầu:");
+        document.write(inHoa(valueInput));
+    </script>
+</body>
+</html>
